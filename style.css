@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.head {
+    width: 98.65%;
+    margin: 10px;
+    height: 50vh;
+    z-index: ;
+}
+
+.head img {
+    opacity: 0.8;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-logo {
+    height: 60px;
+}
+
+.profile-logo img {
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+}
