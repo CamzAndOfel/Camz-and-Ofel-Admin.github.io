@@ -14,15 +14,16 @@
 <body>
     <div class="menu">
         <div class="img-logo">
+            <!-- image upload -->
             <img src="../assets/L.jpg" alt="">
         </div>
         <h1 style="color: white ;">Hello John!</h1>
         <hr>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Dashboard')">Dashboard</button>
+            <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Dashboard')">Dashboard</button>
             <button class="tablinks" onclick="openCity(event, 'Schedule')">Add Schedule</button>
             <button class="tablinks" onclick="openCity(event, 'Settings')">Settings</button>
-            <button class="tablinks" onclick="window.location.href='https://camzandofel.github.io/Camz-and-Ofel-Admin.github.io/index.html'">Logout</button>
+            <button class="tablinks" onclick="window.location.href='http://127.0.0.1:5501/index.html'">Logout</button><!--https://camzandofel.github.io/Camz-and-Ofel-Admin.github.io/index.html-->
         </div>
     </div>
     <main>
@@ -45,9 +46,12 @@
                 </tr>
                 <Tbody>
                     <tr>
-                        <td id="name">john doe</td>
-                        <td id="schedule">daytour</td>
-                        <td id="result"><a href="#">Details</a></td>
+                        <!-- name -->
+                        <td id="name"></td>
+                        <!-- schedule tour and date-->
+                        <td id="schedule"></td>
+                        <!-- details -->
+                        <td id="result"><a href="#"></a></td> <!--amg ilalagay mo lang dito ay ang word the "details"-->
                     </tr>
                 </Tbody>
             </table>
@@ -94,6 +98,7 @@
                     <div id="profile-container">
                         <img id="profileImage" src="../assets/L.jpg" alt="profile" ; />
                     </div>
+                    <!-- change name -->
                     <h3 id="admin-name" class="name-admin align"><u>John Doe</u></h3>
                     <p class="align">Admin</p>
                     <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
@@ -105,7 +110,7 @@
                   Change Username
                 </label>
                     <br>
-                    <input type="text" name="Change-User" id="username" placeholder="John" class="glow active">
+                    <input type="text" name="Change-User" id="username" placeholder="John" class="glow active"> <!--ang babaguhin mo lang dito yung placeholder-->
                     <br>
                     <label for="password" class="label-ad">
                   Change Password
@@ -127,9 +132,6 @@
         </div>
     </main>
 
-    <!-- <div class="footer">
-        <h1>This website publish in Github pages.</h1>
-    </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="../function/db.script.js"></script>
     <script src="../function/db.crud.script.js"></script>
